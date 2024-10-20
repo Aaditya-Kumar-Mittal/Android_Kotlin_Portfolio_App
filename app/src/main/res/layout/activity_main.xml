@@ -5,15 +5,106 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/back"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:padding="15dp"
+        android:background="@drawable/transparent_one"
+        >
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/inter_medium"
+            android:text="About Me"
+            android:textColor="#FFFFFF"
+            android:textSize="45sp"
+            tools:ignore="TextContrastCheck" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            app:srcCompat="@drawable/dev"
+            tools:ignore="ImageContrastCheck"
+            android:fontFamily="@font/inter_medium"
+            />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aaditya Kumar Mittal"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/inter_medium"
+            />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🌎 Ambala, Haryana"
+            android:textColor="#FFFFFF"
+            android:textSize="19sp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/inter_medium"
+            />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📱+918950422940"
+            android:textColor="#FFFFFF"
+            android:textSize="19sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/inter_medium"
+            />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="255dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="20dp"
+            android:fontFamily="@font/source_code_pro_semibold"
+            android:text="Code 🧑🏽‍💻 Conquer 🏆 Innovate"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textFontWeight="300"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/myButton"
+            android:layout_width="243dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/dark_one"
+            android:text="More About Me"
+            android:fontFamily="@font/inter_medium"
+            />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -13,8 +13,17 @@
         android:theme="@style/Theme.Portfolio_App"
         tools:targetApi="31">
         <activity
-            android:name=".MoreAboutMe"
+            android:name=".MySocials"
             android:exported="false" />
+        <activity
+            android:name=".MyTechStacks"
+            android:exported="true" />
+        <activity
+            android:name=".MyWorld"
+            android:exported="true" />
+        <activity
+            android:name=".MoreAboutMe"
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

@@ -9,6 +9,7 @@ import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
+import androidx.cardview.widget.CardView
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
@@ -33,11 +34,15 @@ class MoreAboutMe : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
             R.id.about_me ->{
-                Toast.makeText(this,"Settings Clicked", Toast.LENGTH_LONG).show()
+                startActivity(Intent(this, MainActivity::class.java))
                 true
             }
             R.id.settings->{
                 Toast.makeText(this,"Settings Clicked", Toast.LENGTH_LONG).show()
+                true
+            }
+            R.id.rate_us->{
+                startActivity(Intent(this, RateUsScreen::class.java))
                 true
             }
             else->super.onOptionsItemSelected(item)
@@ -46,10 +51,10 @@ class MoreAboutMe : AppCompatActivity() {
 
     public fun tilesClickListener(){
 
-        var myworld = findViewById<ImageView>(R.id.myWorldImg)
-        var mystack = findViewById<ImageView>(R.id.myStackImg)
-        var mygoal = findViewById<ImageView>(R.id.myGoalsImg)
-        var mysocial = findViewById<ImageView>(R.id.mySocialsImg)
+        var myworld = findViewById<CardView>(R.id.myWorldImg)
+        var mystack = findViewById<CardView>(R.id.myStackImg)
+        var mygoal = findViewById<CardView>(R.id.myGoalsImg)
+        var mysocial = findViewById<CardView>(R.id.mySocialsImg)
 
         myworld.setOnClickListener{
             viewMyWorld()

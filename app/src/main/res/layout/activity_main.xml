@@ -11,18 +11,17 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="30dp"
         android:layout_marginBottom="20dp"
-        android:orientation="vertical"
-        android:gravity="center_vertical"
-        android:padding="15dp"
         android:background="@drawable/transparent_one"
-        >
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/textView"
@@ -41,45 +40,41 @@
             android:layout_height="200dp"
             android:layout_gravity="center"
             android:layout_margin="20dp"
-            app:srcCompat="@drawable/dev"
-            tools:ignore="ImageContrastCheck"
             android:fontFamily="@font/inter_medium"
-            />
+            app:srcCompat="@drawable/dev"
+            tools:ignore="ImageContrastCheck" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/boloNaam"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Aaditya Kumar Mittal"
-            android:textColor="#FFFFFF"
-            android:textSize="25sp"
             android:layout_gravity="center"
             android:fontFamily="@font/inter_medium"
-            />
+            android:text="Aaditya Kumar Mittal"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/textView3"
-            android:layout_marginTop="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/inter_medium"
             android:text="🌎 Ambala, Haryana"
             android:textColor="#FFFFFF"
-            android:textSize="19sp"
-            android:layout_gravity="center"
-            android:fontFamily="@font/inter_medium"
-            />
+            android:textSize="19sp" />
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/myPhone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="📱+918950422940"
-            android:textColor="#FFFFFF"
-            android:textSize="19sp"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
             android:fontFamily="@font/inter_medium"
-            />
+            android:text="📱+911234567890"
+            android:textColor="#FFFFFF"
+            android:textSize="19sp" />
 
         <TextView
             android:id="@+id/textView5"
@@ -98,13 +93,13 @@
             android:id="@+id/myButton"
             android:layout_width="243dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
             android:layout_gravity="center"
+            android:layout_marginTop="15dp"
             android:backgroundTint="@color/dark_one"
-            android:text="More About Me"
-            android:textSize="19sp"
             android:fontFamily="@font/inter_medium"
-            />
+            android:text="More About Me"
+            android:textColor="@color/white"
+            android:textSize="19sp" />
 
     </LinearLayout>
 
